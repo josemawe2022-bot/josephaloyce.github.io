@@ -1,0 +1,67 @@
+  <!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome online shopping!!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ 
+<header>
+    <h1>My Shop</h1>
+    <h3>Place Your Order</h3>
+</header>
+
+<div class="container">
+
+    <!-- Customer Information Form -->
+    <form id="orderForm">
+
+        <h2>Customer Information</h2>
+
+        <label>Full Name</label>
+        <input type="text" id="fullName" required>
+
+        <label>Phone Number</label>
+        <input type="text" id="phone" required>
+
+        <label>Email Address</label>
+        <input type="email" id="email" required>
+
+        <h2>Select Product</h2>
+
+        <label for="product">Choose Product</label>
+        <select id="product" required>
+            <option value="">-- Select Product --</option>
+            <option value="T-Shirt">T-Shirt ($15)</option>
+            <option value="Jersey">Jersey ($30)</option>
+        </select>
+
+    </form>
+ 
+
+    <h2>Select Payment Method</h2>
+
+<label for="payment">Payment Method</label>
+<select id="payment" required>
+    <option value="">-- Select Payment --</option>
+    <option value="mpesa">M-Pesa</option>
+    <option value="cash">Cash on Delivery</option>
+</select>
+
+<button type="button" onclick="submitOrder()">Submit Order</button>
+
+
+    <!-- Order Summary -->
+    <div id="orderSummary" class="summary hidden">
+        <h2>Order Summary</h2>
+        <p id="summaryText"></p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
